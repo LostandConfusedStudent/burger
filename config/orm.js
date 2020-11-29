@@ -5,11 +5,11 @@ function createQmarks(num) {
     var arr = [];
     for (var i = 0; i < num; i++) {
         arr.push("?");
-    };
+    }
     return arr.toString();
 };
 
-function translateSql(obj) {
+function translateSql(ob) {
     var arr = [];
     for (var key in ob) {
         var value = ob[key];
@@ -23,12 +23,12 @@ function translateSql(obj) {
     return arr.toString();
 };
 
-var orm = {
+orm = {
     // selectAll method
-    selectAll: function (table, cb) {
+    selectAll: function(table, cb) {
         var queryString = "SELECT * FROM " + table + ";";
 
-        connection.query(queryString, function (err, res) {
+        connection.query(queryString, function(err, res) {
             if (err) {
                 throw err;
             }
@@ -37,12 +37,12 @@ var orm = {
     },
 
     // insertOne method
-    insertOne: function (table, column, burgerInput, cb) {
-        var queryString = "INSERT INTO " + table + " (" + column.toString() + ") VALUES (" + createQmarks(burgerInput.length) + ") ";
+    insertOne: function(table, column, burgerInput, cb) {
+        var queryString = "INSERT INTO " + table + " (" + column.toString() + ") " + "VALUES (" + createQmarks(burgerInput.length) + ") ";
 
         console.log(queryString);
 
-        connection.query(queryString, burgerInput, function (err, res) {
+        connection.query(queryString, burgerInput, function(err, res) {
             if (err) {
                 throw err;
             }
@@ -51,12 +51,12 @@ var orm = {
     },
 
     // updateOne method
-    updateOne: function (table, objColVal, condition, cb) {
-        var queryString = "UPDATE " + table + " SET " + translateSql(objColVal) + " WHERE " + condition;
+    updateOne: function(table, objColVals, condition, cb) {
+        var queryString = "UPDATE " + table + " SET " + translateSql(objColVals) + " WHERE " + condition;
 
         console.log(queryString);
 
-        connection.query(queryString, burgerInput, function (err, res) {
+        connection.query(queryString, burgerInput, function(err, res) {
             if (err) {
                 throw err;
             }
@@ -65,10 +65,10 @@ var orm = {
     },
 
     // deleteOne method to manage additions
-    deleteOne: function (table, condition, cb) {
+    deleteOne: function(table, condition, cb) {
         var queryString = "DELETE FROM " + table + " WHERE " + condition;
 
-        connection.query(queryString, function (err, res) {
+        connection.query(queryString, function(err, res) {
             if (err) {
                 throw err;
             }
