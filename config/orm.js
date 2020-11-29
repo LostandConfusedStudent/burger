@@ -21,7 +21,7 @@ function translateSql(obj) {
         }
     }
     return arr.toString();
-}
+};
 
 var orm = {
     // selectAll method

@@ -1,4 +1,4 @@
-var orm = require("../config/orm");
+var orm = require("../config/orm.js");
 
 var burger = {
     selectAll: function(cb) {
@@ -13,8 +13,8 @@ var burger = {
         });
     },
     
-    updateOne: function(objColVals, condition, cb) {
-        orm.selectAll("burgers", objColVals, condition, function(res) {
+    updateOne: function(objColVal, condition, cb) {
+        orm.selectAll("burgers", objColVal, condition, function(res) {
             cb(res);
         });
     },

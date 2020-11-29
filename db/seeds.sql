@@ -2,10 +2,10 @@ USE burgers_db;
 
 -- Burger seeds
 INSERT INTO burgers (burger_name, devoured)
-VALUES ("Bacon", true);
+VALUES ("Bacon", false);
 
 INSERT INTO burgers (burger_name, devoured)
-VALUES ("Cheese", true);
+VALUES ("Cheese", false);
 
 INSERT INTO burgers (burger_name, devoured)
-VALUES ("Ham", true);
+VALUES ("Ham", false);
