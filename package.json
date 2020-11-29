@@ -1,0 +1,24 @@
+{
+  "name": "burger",
+  "version": "1.0.0",
+  "description": "This is the homework for week 13. The goal is to use MySQL, Node, Express, Handlebars, and an ORM to create a burger application that lets users submit a type of burger they would like to it. The burger will be displayed on the left side of the page. After the users click on the Devour button, the burger will be moved to the right side of the page. All burgers will be stored in a database.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LostandConfusedStudent/burger.git"
+  },
+  "author": "Paul Sun",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LostandConfusedStudent/burger/issues"
+  },
+  "homepage": "https://github.com/LostandConfusedStudent/burger#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.0",
+    "mysql": "^2.18.1"
+  }
+}
