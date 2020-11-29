@@ -11,6 +11,7 @@ In the terminal, run the following commands:
 * `npm init`
 * `npm install express`
 * `npm install express-handlebars`
+* `npm install body-parser`
 * `npm install mysql`
 
 ## Usage
