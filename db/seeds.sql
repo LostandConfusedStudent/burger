@@ -1,11 +1,11 @@
 USE burgers_db;
 
 -- Burger seeds
-INSERT INTO burgers_db (name)
-VALUE ("Bacon");
+INSERT INTO burgers (burger_name, devoured)
+VALUES ("Bacon", true);
 
-INSERT INTO burgers_db (name)
-VALUE ("Cheese");
+INSERT INTO burgers (burger_name, devoured)
+VALUES ("Cheese", true);
 
-INSERT INTO burgers_db (name)
-VALUE ("Ham");
+INSERT INTO burgers (burger_name, devoured)
+VALUES ("Ham", true);
