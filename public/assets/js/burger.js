@@ -1,6 +1,6 @@
 $(function() {
     $(".create-form").on("submit", function(event) {
-        event.preevntDefault();
+        event.preventDefault();
 
         var newBurger = {
             burger_name: $("#newburger").val().trim(), devoured: 0
@@ -15,7 +15,7 @@ $(function() {
         });
     });
 
-    $(".eatburger").on("cilck", function(event) {
+    $(".eatburger").on("click", function(event) {
         event.preventDefault();
 
         var id = $(this).data("id");
@@ -32,7 +32,7 @@ $(function() {
         });
     });
 
-    $(".trashburger").on("cilck", function(event) {
+    $(".trashburger").on("click", function(event) {
         event.preventDefault();
 
         var id = $(this).data("id");
