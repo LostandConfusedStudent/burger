@@ -14,8 +14,9 @@ In the terminal, run the following commands:
 * `npm install body-parser`
 * `npm install mysql`
 
-## Usage
-
 ## Demonstration
 
 ## Links
+
+* https://github.com/LostandConfusedStudent/burger
+* https://polar-mesa-96411.herokuapp.com/
