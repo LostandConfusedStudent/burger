@@ -1,0 +1,20 @@
+.jumbotron {
+    background-color: orange;
+    margin-top: 25px;
+}
+
+#addburger {
+    background-color: green;
+}
+
+#eatbutton {
+    background-color: darkred;
+}
+
+#trashbutton {
+    background-color: grey;
+}
+
+#leftside, #rightside {
+    background-color: orange;
+}
