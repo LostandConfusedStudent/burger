@@ -14,7 +14,11 @@ In the terminal, run the following commands:
 * `npm install body-parser`
 * `npm install mysql`
 
-## Demonstration
+## Screenshots
+
+![Screenshot](public/assets/img/Screenshot.png)
+![Screenshot2](public/assets/img/Screenshot2.png)
+![Screenshot3](public/assets/img/Screenshot3.png)
 
 ## Links
 
